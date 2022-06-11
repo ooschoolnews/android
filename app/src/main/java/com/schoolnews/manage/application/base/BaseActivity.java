@@ -55,6 +55,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(Object myEvent) {
     }
+
     /**
      * 判断某个界面是否在前台
      *
@@ -80,7 +81,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * 留给子类去覆盖，需要修改颜色的子类自己去处理，默认透明
      */
-    protected void setStatusBarColor(){
+    protected void setStatusBarColor() {
 //        TopBarColorManager.setStatusBarMode(this);
         mImmersionBar = ImmersionBar.with(this)
                 .statusBarColor(R.color.transparent)
@@ -94,7 +95,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityCollector.addActivity(this,getClass());
+        ActivityCollector.addActivity(this, getClass());
         TAG = this.getClass().getSimpleName();
         mApp = JlhxApplication.getApplication();
         mActivity = this;
@@ -144,6 +145,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 是否显示标题栏下方分割线  目前设计的页面有些有  有些没有
+     *
      * @param isShow
      */
     public void isShowDriveLine(boolean isShow) {
@@ -163,11 +165,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     /**
-     *
-     * @param text  title显示文字
+     * @param text title显示文字
      */
-    protected void setTitleText(CharSequence text){
-        if(mTitle != null || text == null){
+    protected void setTitleText(CharSequence text) {
+        if (mTitle != null || text == null) {
             mTitle.setText(text);
         }
     }
@@ -181,9 +182,10 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 重新设置右侧按钮
+     *
      * @param view
      */
-    protected void resetRightButton(View view){
+    protected void resetRightButton(View view) {
         mRightRl.removeAllViews();
         if (view != null) {
             mRightRl.addView(view);
@@ -299,10 +301,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(finishReceiver != null){
+        if (finishReceiver != null) {
             LocalBroadcastManager.getInstance(this).unregisterReceiver(finishReceiver);
         }
-        if(mImmersionBar != null){
+        if (mImmersionBar != null) {
             mImmersionBar.destroy();
         }
         fixInputMethodManagerLeak(this);
@@ -359,8 +361,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            if(addOnReceive(context,intent)){
-                return ;
+            if (addOnReceive(context, intent)) {
+                return;
             }
             if (GlobalKeyContans.MESSAGE_FINISH_ACTION.equals(intent.getAction())) {
                 finish();
@@ -377,18 +379,20 @@ public abstract class BaseActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(this).registerReceiver(finishReceiver, filter);
     }
 
-    /**这个放给子类实现自己的receiver,一个Activity不能实现多个，所以用这中方法，base里面实现，让子类去增加action
+    /**
+     * 这个放给子类实现自己的receiver,一个Activity不能实现多个，所以用这中方法，base里面实现，让子类去增加action
      * 父类实现了 一个关闭自己的receiver
      */
-    protected void addFilterAction(IntentFilter filter){
+    protected void addFilterAction(IntentFilter filter) {
         //默认实现
     }
 
     /**
      * 子类处理receiver回调
+     *
      * @param context
      * @param intent
-     * @return      true:自己处理receiver,false：父类处理receiver
+     * @return true:自己处理receiver,false：父类处理receiver
      */
     protected boolean addOnReceive(Context context, Intent intent) {
         //默认实现

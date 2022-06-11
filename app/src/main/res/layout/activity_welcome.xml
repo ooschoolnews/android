@@ -14,7 +14,7 @@
         android:layout_height="128dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        android:src="@mipmap/bank" />
+        android:src="@mipmap/logo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,8 +22,8 @@
         android:layout_marginTop="@dimen/dp_50"
         android:gravity="center"
         android:lineSpacingMultiplier="1.5"
-        android:text="校园资讯"
-        android:textColor="@color/color_1CA998"
+        android:text="北航头条"
+        android:textColor="@color/color_0f63a4"
         android:textSize="28sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints" />
