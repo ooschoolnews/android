@@ -9,11 +9,7 @@ import com.schoolnews.manage.application.utils.StringUtils;
 
 import java.util.List;
 
-/**
- * @author leo.li
- * @description:
- * @date :2019/7/24 9:48
- */
+
 public class PingLunListAdapter extends BaseQuickAdapter<CommonListBean, BaseViewHolder> {
 
 

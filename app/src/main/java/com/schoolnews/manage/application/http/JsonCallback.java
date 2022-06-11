@@ -16,8 +16,7 @@ import okhttp3.ResponseBody;
 
 /**
  *      * explain  解析回掉
- *      * created by 张国亮.
- *      * created date 2017/4/28 14:01.
+
  *      
  */
 public abstract class JsonCallback<T> extends AbsCallback<T> {

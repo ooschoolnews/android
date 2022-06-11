@@ -2,11 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.io.Serializable;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/12/2 18:29
- */
+
 public class PayBean implements Serializable {
     private long employeesId;
     private double salaryAmount;

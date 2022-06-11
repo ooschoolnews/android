@@ -16,12 +16,6 @@ import com.schoolnews.manage.application.utils.Preferences;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
-
 public class PersonInfoFragment extends BaseFragment {
 
 

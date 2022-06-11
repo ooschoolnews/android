@@ -22,11 +22,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
 
 public class HomePageFragment extends BaseFragment {
 

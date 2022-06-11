@@ -5,9 +5,7 @@ import com.chad.library.adapter.base.entity.MultiItemEntity;
 import java.util.List;
 
 /**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/2/27 13:54
+
  */
 public class MyCollectBean {
     public static final int ONE_TYPE = 1;//收藏公司

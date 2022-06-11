@@ -2,11 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.io.Serializable;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/4/26 14:08
- */
+
 public class UploadFileBean implements Serializable {
     /**
      * originalName : 1587881256169bala_crop.jpg

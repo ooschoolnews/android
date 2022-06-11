@@ -3,11 +3,7 @@ package com.schoolnews.manage.application.bean;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/12/22 11:47
- */
+
 public class TransactionDetailListBean implements Serializable {
 
     /**

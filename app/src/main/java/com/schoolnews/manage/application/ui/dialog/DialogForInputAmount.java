@@ -22,8 +22,7 @@ import com.schoolnews.manage.application.utils.ToastUtils;
 
 /**
  * @Description: 专款拨入  拨入金额
- * @Author: leo.li
- * @CreateDate: 2019/8/27 10:56
+
  */
 public class DialogForInputAmount extends DialogFragment {
     private int widthPadding;

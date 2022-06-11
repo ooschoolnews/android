@@ -11,11 +11,6 @@ import com.schoolnews.manage.application.utils.image.GlideLoader;
 
 import java.util.List;
 
-/**
- * @author leo.li
- * @description:
- * @date :2019/7/24 9:48
- */
 public class SchoolNewsAdapter extends BaseQuickAdapter<CommonListBean, BaseViewHolder> {
 
     public SchoolNewsAdapter(int layoutResId, List data) {

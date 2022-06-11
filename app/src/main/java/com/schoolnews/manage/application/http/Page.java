@@ -3,7 +3,7 @@ package com.schoolnews.manage.application.http;
 import java.io.Serializable;
 
 /**
- * Created by lixinli on 2018/11/28.
+
  */
 public class Page implements Serializable{
 

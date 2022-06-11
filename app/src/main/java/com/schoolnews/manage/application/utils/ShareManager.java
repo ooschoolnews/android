@@ -20,8 +20,6 @@ import com.umeng.socialize.shareboard.ShareBoardConfig;
 import java.lang.ref.WeakReference;
 
 /**
- * Author:lwz
- * Time:2019/12/20
  * Description:
  */
 

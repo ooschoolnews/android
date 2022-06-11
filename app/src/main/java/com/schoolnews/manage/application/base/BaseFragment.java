@@ -20,10 +20,6 @@ import org.greenrobot.eventbus.ThreadMode;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-
-/**
- *
- */
 public abstract class BaseFragment extends Fragment {
     protected String TAG;
     protected View mContentView;

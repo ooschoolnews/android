@@ -3,11 +3,7 @@ package com.schoolnews.manage.application.bean;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Author:lwz
- * Time:2019/3/8
- * Description:
- */
+
 
 public class PageBean<T> implements Serializable{
     /**

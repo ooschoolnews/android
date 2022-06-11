@@ -6,8 +6,6 @@ import android.content.Context;
 
 /**
      * explain Utils初始化相关
-     * created by 张国亮.
-     * created date 2017/4/24 18:09.
      */
 
 

@@ -6,11 +6,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 
 import java.util.List;
 
-/**
- * @author leo.li
- * @description:
- * @date :2019/7/25 13:59
- */
+
 public class DialogListAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
     public DialogListAdapter(int layoutResId, List data) {

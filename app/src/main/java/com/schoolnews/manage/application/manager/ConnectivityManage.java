@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  *      * explain  网络状态管理
- *      * created by 张国亮.
- *      * created date 2017/5/11 17:36.
  *      
  */
 public class ConnectivityManage {

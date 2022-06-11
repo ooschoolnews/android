@@ -23,9 +23,7 @@ import java.util.List;
 
 /**
  * @Description: 列表展示数据弹窗
- * @Author: leo.li
- * @CreateDate: 2019/8/27 10:56
- */
+        */
 public class DialogForList extends DialogFragment {
     private static final String ARG_LIST = "param1";
     private DialogListAdapter mDialogListAdapter;

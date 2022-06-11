@@ -9,7 +9,6 @@ import java.util.UUID;
 
 /**
  * 字符串相关工具类
- * Created by lwz on 2018/4/24.
  */
 
 

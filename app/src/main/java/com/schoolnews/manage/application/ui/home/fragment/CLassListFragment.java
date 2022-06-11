@@ -27,11 +27,6 @@ import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
 
 public class CLassListFragment extends BaseFragment implements BGARefreshLayout.BGARefreshLayoutDelegate {
 

@@ -10,7 +10,7 @@ public final class AddressContants {
 
     static {
         if (GlobalConfigContants.intEnviSwitch == 0) {
-            SERVER_ADDR_HOME = "http://192.168.0.109:8086";//测试环境使用
+            SERVER_ADDR_HOME = "http://192.168.0.4:8080";//测试环境使用
         }
     }
 

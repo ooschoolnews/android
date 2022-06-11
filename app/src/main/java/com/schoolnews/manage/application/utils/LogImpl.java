@@ -14,7 +14,6 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
- * Created by lwz on 2018/4/24.
  */
 final class LogImpl {
 	private static final String FILE_FORMAT = "yyyyMMdd";

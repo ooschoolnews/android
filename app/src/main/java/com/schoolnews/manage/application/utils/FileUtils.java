@@ -31,8 +31,6 @@ import java.util.Set;
 
 /**
      * explain 文件相关工具类
-     * created by 张国亮.
-     * created date 2017/4/24 17:43.
      */
 
 

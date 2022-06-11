@@ -6,7 +6,7 @@ import android.support.annotation.StringRes;
 import com.schoolnews.manage.application.constant.GlobalKeyContans;
 
 /**
- * Created by lixinli on 2019/3/13.
+
  */
 public class TabLayoutInfo {
     private @DrawableRes

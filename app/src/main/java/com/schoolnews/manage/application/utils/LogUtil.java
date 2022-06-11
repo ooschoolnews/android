@@ -1,6 +1,6 @@
 package com.schoolnews.manage.application.utils;
 /**
- * Created by lwz on 2018/4/24.
+
  */
 public class LogUtil {
 	private static boolean is_show = true;

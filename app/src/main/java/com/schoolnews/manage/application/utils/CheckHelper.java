@@ -6,9 +6,7 @@ import android.widget.EditText;
 import com.schoolnews.manage.application.R;
 
 
-/**
- * Created by 张国亮 on 2017/5/13.
- */
+
 
 public class CheckHelper {
 
