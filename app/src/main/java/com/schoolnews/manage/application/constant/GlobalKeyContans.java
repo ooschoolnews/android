@@ -17,6 +17,7 @@ public class GlobalKeyContans {
     public static final String SP_NAME = "KuaiDao";
     public static final String SP_KEY_SEARCH = "SP_KEY_SEARCH";
     //首页底部tab的index
+
     public static final int MAIN_HOMEPAGE_INDEX = 0;
     public static final int MAIN_SINGLE_INDEX = 1;
     public static final int MAIN_CONSULT = 2;

@@ -22,6 +22,5 @@
     <string name="error_name">姓名只能是汉字或英文</string>
     <string name="error_name_length">请输入1-8位的汉字或英文</string>
 
-    <!--分享-->
 
 </resources>

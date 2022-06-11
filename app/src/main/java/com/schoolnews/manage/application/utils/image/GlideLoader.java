@@ -13,8 +13,7 @@ import com.schoolnews.manage.application.utils.StringUtils;
 
 /**
  * Description: ImageLoader
- * Creator: yxc
- * date: 2016/9/21 9:53
+
  */
 public class GlideLoader {
 

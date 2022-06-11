@@ -15,10 +15,6 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapResource;
 
-/**
- * Created by fengzheng on 2017/5/16.
- */
-
 
 public class CornerTransform implements Transformation<Bitmap> {
 

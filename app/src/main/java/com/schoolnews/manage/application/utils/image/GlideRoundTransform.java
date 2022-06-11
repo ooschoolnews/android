@@ -12,7 +12,7 @@ import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.schoolnews.manage.application.utils.LogUtil;
 
 /**
- * Created by fengzheng on 2017/5/16.
+
  */
 
 public class GlideRoundTransform extends BitmapTransformation {
