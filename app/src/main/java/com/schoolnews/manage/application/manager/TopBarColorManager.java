@@ -15,9 +15,8 @@ import com.schoolnews.manage.application.R;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * Created by 张国亮 on 2017/6/19.
- */
+
+
 
 public class TopBarColorManager {
     private static int mColor = Color.WHITE;

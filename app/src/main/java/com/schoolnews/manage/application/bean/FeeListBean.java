@@ -3,11 +3,7 @@ package com.schoolnews.manage.application.bean;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2021/3/29 15:05
- */
+
 public class FeeListBean implements Serializable {
 
 

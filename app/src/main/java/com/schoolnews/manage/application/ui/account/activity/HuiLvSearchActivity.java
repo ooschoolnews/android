@@ -20,8 +20,7 @@ import butterknife.OnClick;
 
 /**
  * @Description: 国际汇率查询
- * @Author: leo.li
- * @CreateDate: 2020/12/17 11:30
+
  */
 public class HuiLvSearchActivity extends BaseActivity implements OnConfirmWithTagListener {
 

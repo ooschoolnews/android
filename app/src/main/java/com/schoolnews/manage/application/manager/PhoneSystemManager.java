@@ -8,9 +8,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
-/**
- * Created by 张国亮 on 2017/6/19.
- */
+
 
 public class PhoneSystemManager {
     public static final String SYS_EMUI = "sys_emui";

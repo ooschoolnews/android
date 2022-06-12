@@ -37,8 +37,7 @@ import okhttp3.Response;
 
 /**
  * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/12/17 11:30
+
  */
 public class SearchActivity extends BaseActivity {
 

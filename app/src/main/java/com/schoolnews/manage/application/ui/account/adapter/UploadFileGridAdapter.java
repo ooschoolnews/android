@@ -12,9 +12,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author leo.li
+
  * @description: 上传文件
- * @date :2019/7/25 13:59
+
  */
 public class UploadFileGridAdapter extends BaseQuickAdapter<Map<String, Object>, BaseViewHolder> {
     private OnClearClickListener mListener;

@@ -2,9 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.io.Serializable;
 
-/**
- * Created by lixinli on 2018/11/27.
- */
+
 public class UserBean implements Serializable {
 
 

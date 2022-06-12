@@ -46,8 +46,7 @@ import okhttp3.Response;
 
 /**
  * @Description: 校园资讯详情
- * @Author: leo.li
- * @CreateDate: 2020/12/17 11:30
+
  */
 public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogShareListener {
 

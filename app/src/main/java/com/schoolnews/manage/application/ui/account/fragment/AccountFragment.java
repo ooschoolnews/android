@@ -16,8 +16,7 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * Author:lwz
- * Time:2019/7/16
+
  * Description:  校园动态
  */
 

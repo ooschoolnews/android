@@ -2,11 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.io.Serializable;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/11/25 15:10
- */
+
 public class InfoBean implements Serializable {
 
     /**

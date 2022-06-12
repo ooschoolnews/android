@@ -6,9 +6,7 @@ import android.os.Environment;
 import java.io.File;
 import java.math.BigDecimal;
 
-/**
- * Created by lwz on 2017/5/3.
- */
+
 
 public class CacheCleanManager {
 

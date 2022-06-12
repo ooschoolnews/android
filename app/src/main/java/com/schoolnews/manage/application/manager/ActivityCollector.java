@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 /**
- * Author: jack * Description:管理所有的栈中的Activity
+ Description:管理所有的栈中的Activity
  */
 public class ActivityCollector {
     /**

@@ -2,11 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.util.List;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2020/3/19 16:43
- */
+
 public class AddressBean {
 
     /**

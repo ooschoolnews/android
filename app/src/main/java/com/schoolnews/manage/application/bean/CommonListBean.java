@@ -2,11 +2,7 @@ package com.schoolnews.manage.application.bean;
 
 import java.io.Serializable;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2021/4/2 18:06
- */
+
 public class CommonListBean implements Serializable {
 
     /**
