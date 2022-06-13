@@ -34,11 +34,6 @@ import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2021/4/1 10:35
- */
 public class MyCollectionActivity extends BaseActivity implements BGARefreshLayout.BGARefreshLayoutDelegate, BaseQuickAdapter.RequestLoadMoreListener {
 
     @BindView(R.id.black_list_rv)

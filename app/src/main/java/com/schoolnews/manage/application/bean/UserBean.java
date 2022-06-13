@@ -27,13 +27,11 @@ public class UserBean implements Serializable {
      */
 
     private long id;
-    private String phone;       //手机号
     private String name;        //姓名
     private String username;    //用户名
     private long orgId;       //组织ID
     private String rolecode;    //权限id
     private String token;       //token
-    private String signature;       //signature签名
 
 
     public long getId() {
@@ -84,19 +82,4 @@ public class UserBean implements Serializable {
         this.token = token;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getSignature() {
-        return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
-    }
 }

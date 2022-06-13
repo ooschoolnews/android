@@ -21,11 +21,6 @@ import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2021/4/1 10:35
- */
 public class PutMessageActivity extends BaseActivity {
 
 
