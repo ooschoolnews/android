@@ -58,7 +58,7 @@ public class PersonInfoFragment extends BaseFragment {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        nameTv.setText("姓名：" + Preferences.getUsername());
+        nameTv.setText(Preferences.getUsername());
     }
 
     @Override
