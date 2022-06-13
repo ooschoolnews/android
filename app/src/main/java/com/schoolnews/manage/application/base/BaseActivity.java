@@ -39,9 +39,6 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-/**
- * Created by lixinli on 2018/11/26.
- */
 public abstract class BaseActivity extends AppCompatActivity {
     protected String TAG;
     protected JlhxApplication mApp;
