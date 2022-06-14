@@ -107,12 +107,6 @@ public class Preferences {
         return userStudyNo;
     }
 
-    public static String getKeyUserClassName() {
-        if (TextUtils.isEmpty(userClassName)) {
-            userClassName = getString(KEY_USER_CLASS_NAME);
-        }
-        return userClassName;
-    }
     /**
      * 获取username
      *
@@ -130,20 +124,6 @@ public class Preferences {
             userToken = getString(KEY_USER_TOKEN);
         }
         return userToken;
-    }
-
-    public static String getRoleCode() {
-        if (TextUtils.isEmpty(roleCode)) {
-            roleCode = getString(KEY_USER_ROLE);
-        }
-        return roleCode;
-    }
-
-    public static long getOrgId() {
-        if (orgId == 0) {
-            orgId = getLong(KEY_USER_ORGID);
-        }
-        return orgId;
     }
 
     /**

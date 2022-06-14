@@ -14,7 +14,6 @@ public class AddressBean {
 
     private int code;
     private String name;
-    private int level;
     private List<ChildrenBeanX> children;
 
     public int getCode() {
@@ -33,21 +32,10 @@ public class AddressBean {
         this.name = name;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
     public List<ChildrenBeanX> getChildren() {
         return children;
     }
 
-    public void setChildren(List<ChildrenBeanX> children) {
-        this.children = children;
-    }
 
     public static class ChildrenBeanX {
         /**

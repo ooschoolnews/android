@@ -7,7 +7,6 @@ public class CommonListBean implements Serializable {
 
     /**
      * id : 1
-     * bankCardAddr : null
      * createAt : 1617357891988
      */
 

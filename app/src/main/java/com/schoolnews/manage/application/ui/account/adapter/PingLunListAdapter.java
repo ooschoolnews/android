@@ -4,7 +4,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.bean.CommonListBean;
-import com.schoolnews.manage.application.bean.FeeListBean;
 import com.schoolnews.manage.application.utils.StringUtils;
 
 import java.util.List;
