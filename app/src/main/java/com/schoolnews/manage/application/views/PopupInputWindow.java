@@ -25,10 +25,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-
-/**
- * Created by admin on 16/9/26.
- */
 public class PopupInputWindow {
     private PopupWindow mPopWindow = null;
     private Activity mContext = null;

@@ -19,10 +19,6 @@ import com.schoolnews.manage.application.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by lwz on 2018/5/30.
- */
-
 public class LabelsView extends ViewGroup implements View.OnClickListener {
 
     private Context mContext;

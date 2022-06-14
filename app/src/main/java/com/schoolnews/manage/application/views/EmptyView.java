@@ -13,9 +13,7 @@ import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.utils.DipUtils;
 import com.schoolnews.manage.application.utils.ScreenUtils;
 
-/**
- * Created by fengzheng on 2017/6/8.
- */
+
 
 public class EmptyView extends RelativeLayout {
 
