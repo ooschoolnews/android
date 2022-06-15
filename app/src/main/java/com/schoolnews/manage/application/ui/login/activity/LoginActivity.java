@@ -40,8 +40,6 @@ public class LoginActivity extends BaseActivity {
     EditText vertifyEt;
     @BindView(R.id.login_tv)
     TextView loginTv;
-    @BindView(R.id.regist_tv)
-    TextView registTv;
     @BindView(R.id.title_tv)
     TextView titleTv;
     @BindView(R.id.regist_ll)
@@ -122,14 +120,11 @@ public class LoginActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.clear_iv, R.id.regist_tv, R.id.login_tv})
+    @OnClick({R.id.clear_iv, R.id.login_tv})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.clear_iv:
                 inputPhoneEt.setText(null);
-                break;
-            case R.id.regist_tv:
-                RegistActivity.start(mActivity);
                 break;
             case R.id.login_tv:
                 loginCient();

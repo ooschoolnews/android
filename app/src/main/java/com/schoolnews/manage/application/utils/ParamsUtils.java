@@ -6,9 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-/**
- * Created by fengzheng on 2017/5/9.
- */
+
 public class ParamsUtils {
 
     public static HashMap<String,String>getParams(){

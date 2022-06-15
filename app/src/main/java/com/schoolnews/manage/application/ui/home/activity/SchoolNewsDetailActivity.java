@@ -17,7 +17,6 @@ import com.lzy.okgo.OkGo;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
 import com.schoolnews.manage.application.bean.CommonListBean;
-import com.schoolnews.manage.application.bean.FeeListBean;
 import com.schoolnews.manage.application.bean.InfoBean;
 import com.schoolnews.manage.application.constant.AddressContants;
 import com.schoolnews.manage.application.constant.GlobalConfigContants;

@@ -30,11 +30,7 @@ public final class AddressContants {
     public static final String API_SERVER_NO_LIKE = SERVER_ADDR_HOME + "/admin/file/upload";  //文件上传
 
 
-    public static final String API_SERVER_ADD_BANK_CARD = SERVER_ADDR_HOME + "/bankCard/add";
-    public static final String API_SERVER_BANK_LIST = SERVER_ADDR_HOME + "/bankCard/list";
-    public static final String API_SERVER_DELETE_BANK_CARD = SERVER_ADDR_HOME + "/bankCard/del";
     public static final String API_SERVER_ZHAUNZHANG_LIST = SERVER_ADDR_HOME + "/news/list";
-    public static final String API_SERVER_ZHAUNZHANG = SERVER_ADDR_HOME + "/transferFlow/add";
     public static final String API_SERVER_SEARCH = SERVER_ADDR_HOME + "/news/key";
 
 

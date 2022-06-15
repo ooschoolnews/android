@@ -16,11 +16,6 @@ import com.schoolnews.manage.application.utils.Preferences;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
 
 public class PersonInfoFragment extends BaseFragment {
 
@@ -58,7 +53,7 @@ public class PersonInfoFragment extends BaseFragment {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        nameTv.setText("姓名：" + Preferences.getUsername());
+        nameTv.setText(Preferences.getUsername());
     }
 
     @Override

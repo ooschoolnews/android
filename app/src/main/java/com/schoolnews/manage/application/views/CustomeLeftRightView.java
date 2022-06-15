@@ -12,8 +12,7 @@ import com.schoolnews.manage.application.R;
 
 /**
  * @Description: 左边标题 右边内容
- * @Author: leo.li
- * @CreateDate: 2020/01/14 16:22
+
  */
 public class CustomeLeftRightView extends RelativeLayout {
 

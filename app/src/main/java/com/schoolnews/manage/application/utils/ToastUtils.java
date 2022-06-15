@@ -8,8 +8,7 @@ import android.widget.Toast;
 
 /**
      * explain  吐司相关工具类
-      * created by 张国亮.
-     * created date 2017/4/24 18:00.
+
      */
 
 

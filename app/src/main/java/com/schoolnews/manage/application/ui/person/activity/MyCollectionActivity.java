@@ -15,7 +15,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
 import com.schoolnews.manage.application.bean.CommonListBean;
-import com.schoolnews.manage.application.bean.FeeListBean;
 import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
@@ -34,11 +33,6 @@ import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * @Description:
- * @Author: leo.li
- * @CreateDate: 2021/4/1 10:35
- */
 public class MyCollectionActivity extends BaseActivity implements BGARefreshLayout.BGARefreshLayoutDelegate, BaseQuickAdapter.RequestLoadMoreListener {
 
     @BindView(R.id.black_list_rv)
@@ -51,7 +45,6 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
     private int downY;
 
     private ToIssueBillsListAdapter mBlackListAdapter;
-    List<FeeListBean.RecordsBean> recordsBeans = new ArrayList<>();
 
     public static void start(Context context) {
         Intent intent = new Intent(context, MyCollectionActivity.class);

@@ -9,7 +9,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseFragment;
 import com.schoolnews.manage.application.bean.CommonListBean;
-import com.schoolnews.manage.application.bean.FeeListBean;
 import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
@@ -18,7 +17,7 @@ import com.schoolnews.manage.application.ui.home.adapter.SchoolNewsAdapter;
 import com.schoolnews.manage.application.utils.ToastUtils;
 import com.schoolnews.manage.application.utils.dialog.DialogMaker;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import butterknife.BindView;
@@ -27,11 +26,6 @@ import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
 
 public class CLassListFragment extends BaseFragment implements BGARefreshLayout.BGARefreshLayoutDelegate {
 

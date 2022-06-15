@@ -13,9 +13,6 @@ import android.view.inputmethod.EditorInfo;
 
 import com.schoolnews.manage.application.R;
 
-/**
- * Created by Administrator on 2017/6/5.
- */
 public class CustomPwdWidget extends android.support.v7.widget.AppCompatEditText {
     private PasswordFullListener mListener;
     // 画笔
