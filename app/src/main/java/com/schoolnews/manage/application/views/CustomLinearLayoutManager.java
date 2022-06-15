@@ -3,9 +3,6 @@ package com.schoolnews.manage.application.views;
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 
-/**
- * Created by lwz on 2017/6/24.
- */
 
 public class CustomLinearLayoutManager extends LinearLayoutManager {
     private boolean isScrollEnabled = true;

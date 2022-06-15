@@ -2,9 +2,6 @@ package com.schoolnews.manage.application.utils;
 
 import android.content.Context;
 
-/**
- * Created by lwz on 2017/8/7.
- */
 
 public class DipUtils {
     public static int dip2px(Context context, float dipValue) {

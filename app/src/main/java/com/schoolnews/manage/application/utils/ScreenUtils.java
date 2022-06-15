@@ -14,8 +14,7 @@ import android.view.WindowManager;
 
 /**
      * explain  屏幕相关工具类
-     * created by 张国亮.
-     * created date 2017/4/24 18:04.
+
      */
 
 

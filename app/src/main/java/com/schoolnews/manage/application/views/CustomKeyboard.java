@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import com.schoolnews.manage.application.R;
 
-/**
- * Created by Administrator on 2017/6/5.
- */
 
 public class CustomKeyboard extends LinearLayout implements View.OnClickListener {
     private CustomerKeyboardClickListener mListener;

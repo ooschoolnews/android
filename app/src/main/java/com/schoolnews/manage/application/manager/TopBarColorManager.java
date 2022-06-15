@@ -36,17 +36,7 @@ public class TopBarColorManager {
      */
     public static void setTopBarColor(boolean isHomePage, Activity activity) {
         isHomePage = false;
-        if (PhoneSystemManager.isMiui()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
-            {
-                setStatusBarDarkMode(!isHomePage, activity);
-                changeTopColorNomal(isHomePage, activity);
-            }
-            else
-            {
-                changeTopColorUmNomal(isHomePage, activity);
-            }
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!isHomePage) {
                 // 沉浸式
                 activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -131,37 +121,4 @@ public class TopBarColorManager {
         }
     }
 
-    /**
-     * 设置状态栏背景为白色，字体深色
-     * @param context
-     */
-    public static void setStatusBarMode(Activity context){
-        if(context == null){
-            return ;
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            StatusBarCompat.setStatusBarColor(context, Color.WHITE);//白色
-//            StatusBarCompat.setStatusBarMode(context,true);         //深色文字
-//        }else{
-//            StatusBarCompat.setStatusBarColor(context, Color.BLACK);//黑色
-            LightStatusBarUtils.setLightStatusBar(context,true);    //深色文字
-        }
-    }
-    /**
-     * 设置状态栏背景为白色，字体深色
-     * @param context
-     */
-    public static void setStatusBarModeTranslate(Activity context){
-        if(context == null){
-            return ;
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            StatusBarCompat.setStatusBarColor(context, Color.TRANSPARENT,200);//透明,不生效
-            StatusBarCompat.translucentStatusBar(context);//透明  ，生效同时内容可以顶到最上面
-//            StatusBarCompat.setStatusBarMode(context,true);         //深色文字
-//        }else{
-//            StatusBarCompat.setStatusBarColor(context, Color.BLACK);//黑色
-            LightStatusBarUtils.setLightStatusBar(context,false);    //浅色文字
-        }
-    }
 }

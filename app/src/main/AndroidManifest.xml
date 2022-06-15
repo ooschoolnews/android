@@ -95,9 +95,6 @@
             android:name="com.schoolnews.manage.application.ui.login.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.schoolnews.manage.application.ui.account.activity.HuiLvSearchActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.schoolnews.manage.application.ui.person.activity.MyCollectionActivity"
             android:screenOrientation="portrait" />
         <activity
