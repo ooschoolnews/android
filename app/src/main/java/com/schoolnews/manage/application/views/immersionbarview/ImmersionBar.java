@@ -37,7 +37,6 @@ import java.util.Set;
 
 /**
  * android 4.4以上沉浸式以及bar的管理
- * Created by gyf on 2017/05/09.
  */
 @TargetApi(Build.VERSION_CODES.KITKAT)
 public class ImmersionBar {

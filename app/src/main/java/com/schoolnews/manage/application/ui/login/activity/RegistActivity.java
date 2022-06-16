@@ -37,19 +37,10 @@ public class RegistActivity extends BaseActivity {
     TextView loginTv;
     @BindView(R.id.title_tv)
     TextView titleTv;
-    @BindView(R.id.user_name_et)
-    EditText userNameEt;
-    @BindView(R.id.study_no_et)
-    EditText studyNoEt;
-    @BindView(R.id.class_name_et)
-    EditText classNameEt;
     @BindView(R.id.regist_ll)
     LinearLayout registLl;
 
     public static void start(Context context) {
-        Intent intent = new Intent(context, RegistActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
     }
 
 
@@ -79,9 +70,6 @@ public class RegistActivity extends BaseActivity {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        titleTv.setText("注册");
-        loginTv.setVisibility(View.GONE);
-        registLl.setVisibility(View.GONE);
     }
 
 
@@ -93,40 +81,6 @@ public class RegistActivity extends BaseActivity {
     @Override
     protected void processLogic(Bundle savedInstanceState) {
 
-    }
-
-
-    @OnClick({R.id.clear_iv, R.id.login_tv})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.clear_iv:
-                inputPhoneEt.setText(null);
-                break;
-        }
-    }
-
-    /**
-     * 注册
-     */
-    private void loginCient() {
-        showLoadingDialog();
-
-        HttpHelper.regist(TAG, inputPhoneEt.getText().toString(), vertifyEt.getText().toString(), userNameEt.getText().toString(),
-                studyNoEt.getText().toString(),  new JsonCallback<LzyResponse<Object>>() {
-                    @Override
-                    public void onSuccess(LzyResponse<Object> lzyResponse, Call call, Response response) {
-                        LoginActivity.start(mActivity);
-                        finish();
-                        dismissLoadingDialog();
-                    }
-
-                    @Override
-                    public void onError(Call call, Response response, Exception e) {
-                        super.onError(call, response, e);
-                        dismissLoadingDialog();
-                        ToastUtils.showLongToast("注册失败");
-                    }
-                });
     }
 
     @Override

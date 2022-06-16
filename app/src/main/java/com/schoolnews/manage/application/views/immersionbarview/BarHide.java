@@ -1,8 +1,6 @@
 package com.schoolnews.manage.application.views.immersionbarview;
 
-/**
- * Created by geyifeng on 2017/4/25.
- */
+
 
 public enum BarHide {
     FLAG_HIDE_STATUS_BAR, //隐藏状态栏

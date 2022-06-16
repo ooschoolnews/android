@@ -18,13 +18,10 @@ import com.schoolnews.manage.application.bean.CommonListBean;
 import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
-import com.schoolnews.manage.application.ui.home.activity.SchoolNewsDetailActivity;
-import com.schoolnews.manage.application.ui.home.adapter.ToIssueBillsListAdapter;
 import com.schoolnews.manage.application.utils.DipUtils;
 import com.schoolnews.manage.application.utils.ScreenUtils;
 import com.schoolnews.manage.application.utils.ToastUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -43,8 +40,6 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
     private PopupWindow mPopupWindow;
     private int downX;
     private int downY;
-
-    private ToIssueBillsListAdapter mBlackListAdapter;
 
     public static void start(Context context) {
         Intent intent = new Intent(context, MyCollectionActivity.class);
@@ -84,20 +79,13 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
         refreshLayout.setRefreshViewHolder(new BGANormalRefreshViewHolder(getApplicationContext(), true));
         refreshLayout.setPullDownRefreshEnable(true);
 
-        mBlackListAdapter = new ToIssueBillsListAdapter(R.layout.news_list_item, 1);
         LinearLayoutManager manager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         blackListRv.setLayoutManager(manager);
-        blackListRv.setAdapter(mBlackListAdapter);
     }
 
     @Override
     protected void setListener() {
-        mBlackListAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                SchoolNewsDetailActivity.startAction(mActivity, mBlackListAdapter.getData().get(position));
-            }
-        });
+
     }
 
     /**
@@ -145,7 +133,6 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
             public void onSuccess(LzyResponse<List<CommonListBean>> lzyResponse, Call call, Response response) {
 
                 List<CommonListBean> feeListBean = lzyResponse.list;
-                mBlackListAdapter.setNewData(feeListBean);
                 refreshLayout.endRefreshing();
                 dismissLoadingDialog();
             }

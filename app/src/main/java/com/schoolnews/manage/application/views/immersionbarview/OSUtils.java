@@ -6,7 +6,6 @@ import java.lang.reflect.Method;
 
 /**
  * 手机系统判断
- * Created by geyifeng on 2017/4/18.
  */
 public class OSUtils {
 

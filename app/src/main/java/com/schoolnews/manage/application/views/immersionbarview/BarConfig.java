@@ -12,10 +12,6 @@ import android.util.TypedValue;
 import android.view.Display;
 import android.view.WindowManager;
 
-/**
- * Created by geyifeng on 2017/5/11.
- */
-
 class BarConfig {
 
     private static final String STATUS_BAR_HEIGHT_RES_NAME = "status_bar_height";

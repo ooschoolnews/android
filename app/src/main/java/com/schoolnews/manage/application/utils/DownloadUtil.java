@@ -12,8 +12,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- *
- * @Date : 2018/3/10
  * @Desc : 下载文件工具
  */
 public class DownloadUtil {

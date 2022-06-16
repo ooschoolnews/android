@@ -12,7 +12,6 @@ import java.util.Map;
 
 /**
  * 沉浸式参数信息
- * Created by geyifeng on 2017/5/9.
  */
 public class BarParams implements Cloneable {
     @ColorInt

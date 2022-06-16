@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 
 /**
  * 解决底部输入框和软键盘的问题
- * Created by geyifeng on 2017/5/17.
  */
 public class KeyboardPatch {
 

@@ -87,10 +87,6 @@
         <activity
             android:name="com.schoolnews.manage.application.ui.home.activity.SchoolNewsDetailActivity"
             android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.schoolnews.manage.application.ui.login.activity.RegistActivity"
-            android:screenOrientation="portrait" />
         <activity
             android:name="com.schoolnews.manage.application.ui.login.activity.LoginActivity"
             android:screenOrientation="portrait" />
