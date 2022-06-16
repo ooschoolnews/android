@@ -110,7 +110,6 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
     protected void initData(Bundle savedInstanceState) {
         mRecordsBean = (CommonListBean) getIntent().getSerializableExtra("bean");
     }
-
     @Override
     protected void initView(Bundle savedInstanceState) {
         mPingLunListAdapter = new PingLunListAdapter(R.layout.pinglun_list_item);
@@ -126,12 +125,10 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
         }
 
     }
-
     @Override
     protected void setListener() {
 
     }
-
     @Override
     protected void processLogic(Bundle savedInstanceState) {
         if (StringUtils.isEmpty(mRecordsBean.getUrl())) {
@@ -158,7 +155,6 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
 
         getCommonList();
     }
-
     private void getCommonList() {
         OkGo.get(AddressContants.API_SERVER_COMMON_LIST + "?newsId=" + mRecordsBean.getId())
                 .execute(new JsonCallback<LzyResponse<List<CommonListBean>>>() {
@@ -175,7 +171,6 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
                     }
                 });
     }
-
     @OnClick({R.id.shoucang_ll, R.id.comment_ll, R.id.share_ll})
     public void onClick(View view) {
         switch (view.getId()) {
@@ -226,7 +221,6 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
                 break;
         }
     }
-
     /**
      * 收藏
      */
@@ -237,14 +231,12 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
                 .params("userId", Preferences.getUserId())
                 .params("newsId", mRecordsBean.getId())
                 .execute(new JsonCallback<LzyResponse<InfoBean>>() {
-
                     @Override
                     public void onSuccess(LzyResponse<InfoBean> agentBeanLzyResponse, Call call, Response response) {
                         ToastUtils.showShortToast("收藏成功");
                         shoucangImg.setImageResource(R.mipmap.icon_shoucang_hover);
                         mRecordsBean.setCollectionId(111);
                     }
-
                     @Override
                     public void onError(Call call, Response response, Exception e) {
                         super.onError(call, response, e);
@@ -252,19 +244,15 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
                     }
                 });
     }
-
-
     /**
      * 取消收藏
      */
     private void cancelConlectionThisDemand() {
-
         OkGo.post(AddressContants.API_SERVER_CANCEL_COLLECT)
                 .isMultipart(true)
                 .headers("Content-Type", "multipart/form-data; boundary=;")
                 .params("collectionId", mRecordsBean.getCollectionId())
                 .execute(new JsonCallback<LzyResponse<Object>>() {
-
                     @Override
                     public void onSuccess(LzyResponse<Object> agentBeanLzyResponse, Call call, Response response) {
                         ToastUtils.showShortToast("取消收藏");
@@ -279,19 +267,16 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
                     }
                 });
     }
-
     @Override
     public void weixin() {
         ShareManager.getInstance().shareWeiXinAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
         ToastUtils.showLongToast("请配置正确的UMENG_APPKEY");
     }
-
     @Override
     public void weibo() {
         ShareManager.getInstance().shareSinaAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
         ToastUtils.showLongToast("请配置正确的UMENG_APPKEY");
     }
-
     @Override
     public void qq() {
         ShareManager.getInstance().shareQQAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
