@@ -4,12 +4,6 @@ import java.io.Serializable;
 
 
 public class CommonListBean implements Serializable {
-
-    /**
-     * id : 1
-     * createAt : 1617357891988
-     */
-
     private long id;
     private int type;
     private int collectionId;

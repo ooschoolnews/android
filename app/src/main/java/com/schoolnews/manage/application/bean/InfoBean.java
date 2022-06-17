@@ -5,15 +5,6 @@ import java.io.Serializable;
 
 public class InfoBean implements Serializable {
 
-    /**
-     * id : 1
-     * userName : 李威振
-     * password : 123456
-     * studyNo : 003201
-     * mobile : 13511187891
-     * className : 七年级一班
-     */
-
     private long id;
     private int collectionId;
     private String userName;

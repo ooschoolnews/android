@@ -97,11 +97,6 @@ public class PersonInfoActivity extends BaseActivity {
             public void onSuccess(LzyResponse<InfoBean> lzyResponse, Call call, Response response) {
 
                 EventBus.getDefault().post(new ModifySuccessEvent());
-//                Preferences.saveUserId(mInfoBean.getId());
-//                Preferences.saveUserName(mInfoBean.getUserName());
-//                Preferences.saveUserStudyNo(mInfoBean.getStudyNo());
-//                Preferences.saveUserPhone(mInfoBean.getMobile());
-//                Preferences.saveUserClassName(mInfoBean.getClassName());
                 ToastUtils.showLongToast("修改成功");
                 finish();
                 dismissLoadingDialog();
