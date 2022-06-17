@@ -81,7 +81,6 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 留给子类去覆盖，需要修改颜色的子类自己去处理，默认透明
      */
     protected void setStatusBarColor(){
-//        TopBarColorManager.setStatusBarMode(this);
         mImmersionBar = ImmersionBar.with(this)
                 .statusBarColor(R.color.transparent)
                 .statusBarDarkFont(true, 0.5f)
@@ -99,7 +98,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         mApp = JlhxApplication.getApplication();
         mActivity = this;
 
-//        TopBarColorManager.setTopBarColor(false, mActivity);
         setStatusBarColor();
 
         initData(savedInstanceState);

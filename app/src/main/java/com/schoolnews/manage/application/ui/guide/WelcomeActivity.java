@@ -10,6 +10,8 @@ import com.schoolnews.manage.application.ui.MainActivity;
 import com.schoolnews.manage.application.ui.login.activity.LoginActivity;
 import com.schoolnews.manage.application.utils.Preferences;
 
+//欢迎页
+
 public class WelcomeActivity extends BaseActivity {
     Runnable runnable;
 

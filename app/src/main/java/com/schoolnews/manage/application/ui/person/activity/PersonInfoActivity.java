@@ -6,23 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
-import com.schoolnews.manage.application.bean.InfoBean;
-import com.schoolnews.manage.application.event.ModifySuccessEvent;
-import com.schoolnews.manage.application.http.HttpHelper;
-import com.schoolnews.manage.application.http.JsonCallback;
-import com.schoolnews.manage.application.http.LzyResponse;
 import com.schoolnews.manage.application.utils.Preferences;
-import com.schoolnews.manage.application.utils.ToastUtils;
-
-import org.greenrobot.eventbus.EventBus;
-
 import butterknife.BindView;
-import butterknife.OnClick;
-import okhttp3.Call;
-import okhttp3.Response;
+
+
+//个人信息
 
 public class PersonInfoActivity extends BaseActivity {
 
@@ -82,32 +72,4 @@ public class PersonInfoActivity extends BaseActivity {
 
     }
 
-    @OnClick(R.id.modify_tv)
-    public void onClick() {
-        modifyInfo();
-    }
-
-    /**
-     * 登陆
-     */
-    private void modifyInfo() {
-        showLoadingDialog();
-        HttpHelper.modifyInfo(TAG, nameEt.getText().toString(), ageEt.getText().toString(), phoneEt.getText().toString(), new JsonCallback<LzyResponse<InfoBean>>() {
-            @Override
-            public void onSuccess(LzyResponse<InfoBean> lzyResponse, Call call, Response response) {
-
-                EventBus.getDefault().post(new ModifySuccessEvent());
-                ToastUtils.showLongToast("修改成功");
-                finish();
-                dismissLoadingDialog();
-            }
-
-            @Override
-            public void onError(Call call, Response response, Exception e) {
-                super.onError(call, response, e);
-                dismissLoadingDialog();
-                finish();
-            }
-        });
-    }
 }

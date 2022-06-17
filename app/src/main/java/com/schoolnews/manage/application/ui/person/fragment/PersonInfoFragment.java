@@ -16,6 +16,7 @@ import com.schoolnews.manage.application.utils.Preferences;
 import butterknife.BindView;
 import butterknife.OnClick;
 
+//个人信息fragment
 
 public class PersonInfoFragment extends BaseFragment {
 

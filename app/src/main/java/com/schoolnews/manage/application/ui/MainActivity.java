@@ -27,6 +27,8 @@ import java.util.List;
 
 import butterknife.BindView;
 
+//页面设置
+
 public class MainActivity extends BaseActivity implements TabDynamicLayoutView.OnTabSelectedListener {
     public static final String TAB_INDEX = "index";
     public static boolean isForeground = false;
