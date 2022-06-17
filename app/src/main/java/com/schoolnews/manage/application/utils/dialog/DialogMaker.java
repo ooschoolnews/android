@@ -58,22 +58,5 @@ public class DialogMaker {
 		}
 
 	}
-	
-	public static void setMessage(String message) {
-		if (null != progressDialog && progressDialog.isShowing()
-				&& !TextUtils.isEmpty(message)) {
-			progressDialog.setMessage(message);
-		}
-	}
 
-	public static void updateLoadingMessage(String message) {
-		if (null != progressDialog && progressDialog.isShowing()
-				&& !TextUtils.isEmpty(message)) {
-			progressDialog.updateLoadingMessage(message);
-		}
-	}
-	
-	public static boolean isShowing() {
-		return (progressDialog != null && progressDialog.isShowing());
-	}
 }

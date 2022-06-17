@@ -13,8 +13,6 @@ import com.schoolnews.manage.application.R;
  * 一个半透明窗口,包含一个Progressbar 和 Message部分. 其中Message部分可选. 可单独使用,也可以使用
  * {@link DialogMaker} 进行相关窗口显示.
  * 
- * @author Qijun
- * 
  */
 public class DialogEasyProgress extends Dialog {
 

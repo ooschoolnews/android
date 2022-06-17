@@ -6,11 +6,11 @@ import java.io.Serializable;
 public class UserBean implements Serializable {
 
     private long id;
-    private String name;        //姓名
-    private String username;    //用户名
-    private long orgId;       //组织ID
-    private String rolecode;    //权限id
-    private String token;       //token
+    private String name;
+    private String username;
+    private long orgId;
+    private String rolecode;
+    private String token;
 
 
     public long getId() {

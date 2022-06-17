@@ -267,28 +267,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param savedInstanceState
      */
     protected abstract void processLogic(Bundle savedInstanceState);
-
-
-    protected void showKeyboard(boolean isShow) {
-        InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
-        if (isShow) {
-            if (getCurrentFocus() == null) {
-                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-            } else {
-                imm.showSoftInput(getCurrentFocus(), 0);
-            }
-        } else {
-            if (getCurrentFocus() != null) {
-                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-            }
-        }
-    }
-
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//    }
-
+    
     @Override
     protected void onPause() {
         super.onPause();
