@@ -75,15 +75,6 @@ public class LogUtil {
 		LogImpl.i("RES", buildMessage(msg));
 	}
 
-	public static final void audio(String msg) {
-		if(is_show)
-		LogImpl.i("AudioRecorder", buildMessage(msg));
-	}
-
-	public static String getLogFileName(String cat) {
-		return LogImpl.getLogFileName(cat);
-	}
-
 	private static String buildMessage(String msg) {
 		return msg;
 	}

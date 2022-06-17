@@ -17,8 +17,7 @@ import com.schoolnews.manage.application.R;
 public class DialogEasyProgress extends Dialog {
 
 	private int mLayoutId;
-	//private FlipImageView imageView;
-	//private AnimationDrawable animationDrawable;
+
 	public DialogEasyProgress(Context context, int style, int layout) {
 		super(context, style);
 		LayoutParams Params = getWindow().getAttributes();
@@ -38,8 +37,7 @@ public class DialogEasyProgress extends Dialog {
 	public void setMessage(String msg) {
 	}
 
-	public void updateLoadingMessage(String msg) {
-	}
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -49,18 +47,4 @@ public class DialogEasyProgress extends Dialog {
 	}
 
 
-//	public void startAnim()
-//	{
-//		if(imageView !=null )
-//		{
-//			imageView.startFlid();
-//		}
-//	}
-//
-//	public void stopAnim()
-//	{
-//		if (imageView != null) {
-//			imageView.stopFlide();
-//		}
-//	}
 }

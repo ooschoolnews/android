@@ -38,7 +38,6 @@ public class TabView extends LinearLayout {
         View.inflate(context, R.layout.view_tab, this);
         iconIv = (ImageView) findViewById(R.id.iv);
         textTv = (TextView) findViewById(R.id.tv_text);
-//        markNum = (TextView) findViewById(R.id.tv_mark);
     }
     /**
      * 设置默认值

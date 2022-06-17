@@ -11,21 +11,8 @@ import com.schoolnews.manage.application.utils.image.GlideLoader;
 
 import java.util.List;
 
-/**
- * @author leo.li
- * @description:
- * @date :2019/7/24 9:48
- */
 public class ToIssueBillsListAdapter extends BaseQuickAdapter<CommonListBean, BaseViewHolder> {
     private int mType;
-
-    public ToIssueBillsListAdapter(int layoutResId, List data) {
-        super(layoutResId, data);
-    }
-
-    public ToIssueBillsListAdapter(List data) {
-        super(data);
-    }
 
     public ToIssueBillsListAdapter(int layoutResId, int type) {
         super(layoutResId);

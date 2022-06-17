@@ -66,13 +66,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity
-            android:name=".wxapi.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
        <meta-data
            android:name="UMENG_APPKEY"
            android:value="5d53a5e64ca3577153000b57"></meta-data>

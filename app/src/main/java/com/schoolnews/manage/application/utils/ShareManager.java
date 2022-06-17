@@ -294,18 +294,4 @@ public class ShareManager {
         }
     };
 
-    public void onDestroy() {
-        UMShareAPI.get(JlhxApplication.getApplication()).release();
-        activity = null;
-        instance = null;
-    }
-
-    public void onResume() {
-        DialogMaker.dismissProgressDialog();
-    }
-
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        UMShareAPI.get(JlhxApplication.getApplication()).onActivityResult(requestCode, resultCode, data);
-        DialogMaker.dismissProgressDialog();
-    }
 }

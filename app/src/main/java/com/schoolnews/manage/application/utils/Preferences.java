@@ -30,26 +30,11 @@ public class Preferences {
 
     private static long userId;     //用户id
     private static String username; //用户名
-    private static String userClassName; //用户名
     private static String userPhone; //用户名
-    private static String userStudyNo; //用户名
     private static String userToken; //用户token
     private static String roleCode; //用户role
-    private static long orgId;    //用户组织机构id
     public static boolean ISBACKGROUND = true;  //是否后台标识
 
-    /**
-     * 保存随机imei
-     *
-     * @param imei
-     */
-    public static void saveRandomImei(String imei) {
-        saveString(KEY_RANDOM_IMEI, imei);
-    }
-
-    public static void saveToken(String token) {
-        saveString(KEY_USER_TOKEN, token);
-    }
 
     public static void saveUserPhone(String phone) {
         saveString(KEY_USER_MOBILE, phone);
@@ -72,15 +57,6 @@ public class Preferences {
     }
 
     /**
-     * 获取随机imei
-     *
-     * @return
-     */
-    public static String getRandomImei() {
-        return getString(KEY_RANDOM_IMEI);
-    }
-
-    /**
      * 获取用户id
      *
      * @return
@@ -98,13 +74,6 @@ public class Preferences {
             userPhone = getString(KEY_USER_MOBILE);
         }
         return userPhone;
-    }
-
-    public static String getKeyUserNo() {
-        if (TextUtils.isEmpty(userStudyNo)) {
-            userStudyNo = getString(KEY_USER_NO);
-        }
-        return userStudyNo;
     }
 
     /**
@@ -143,7 +112,6 @@ public class Preferences {
         editor.putString(KEY_USER_ROLE, bean.getRolecode());
         roleCode = bean.getRolecode();
         editor.putLong(KEY_USER_ORGID, bean.getOrgId());
-        orgId = bean.getOrgId();
         editor.commit();
     }
 
@@ -164,33 +132,6 @@ public class Preferences {
         return getUserId() != 0/* && !TextUtils.isEmpty(getUserToken()) && !TextUtils.isEmpty(getRoleCode())*/;
     }
 
-    /**
-     * 获取短信验证码的限制时间
-     *
-     * @return
-     */
-    public static int getCountDownTime(String username) {
-        long aLong = getSharedPreferences().getLong(KEY_COUNT_DOWN_TIME + username, 0);
-        if (aLong == 0) {
-            return -1;
-        }
-        long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        if (aLong > timeInMillis) {
-            return (int) ((aLong - timeInMillis) / 1000);
-        }
-        return -1;
-    }
-
-    /**
-     * 设置短信获取的限制时间
-     */
-    public static void saveCountDownTime(String username) {
-        SharedPreferences.Editor editor = getSharedPreferences().edit();
-        editor.putLong(KEY_COUNT_DOWN_TIME + username, Calendar.getInstance().getTimeInMillis() + GlobalKeyContans.SHORT_MESSAGE_TIME_INTERVAL * 1000);
-        editor.commit();
-
-    }
-
     private static void saveString(String key, String value) {
         SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putString(key, value);
@@ -203,9 +144,6 @@ public class Preferences {
         editor.commit();
     }
 
-    private static long getLong(String key) {
-        return getSharedPreferences().getLong(key, 0);
-    }
 
     private static String getString(String key) {
         return getSharedPreferences().getString(key, null);

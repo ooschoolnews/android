@@ -174,7 +174,7 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mHomePageFragment);
                 }
-                mImmersionBar.statusBarDarkFont(true).init();//深色文字
+//                mImmersionBar.statusBarDarkFont(true).init();//深色文字
                 break;
             case GlobalKeyContans.MAIN_SINGLE_INDEX:
                 if (null == mAccountFragment) {
@@ -183,7 +183,7 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mAccountFragment);
                 }
-                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
+//                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
 
                 break;
               case GlobalKeyContans.MAIN_CONSULT:
@@ -193,7 +193,7 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mConsultFragment);
                 }
-                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
+//                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
 
                 break;
             case GlobalKeyContans.MAIN_MY_INDEX:
@@ -203,7 +203,7 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mPersonInfoFragment);
                 }
-                mImmersionBar.statusBarDarkFont(true).init();//深色文字
+//                mImmersionBar.statusBarDarkFont(true).init();//深色文字
 
                 break;
 
