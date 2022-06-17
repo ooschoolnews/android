@@ -101,10 +101,6 @@
             android:name="com.schoolnews.manage.application.ui.person.activity.PutMessageActivity"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name="com.schoolnews.manage.application.ui.person.activity.ModifyPsdActivity"
-            android:screenOrientation="portrait" />
-
     </application>
 
 </manifest>

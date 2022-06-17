@@ -10,12 +10,6 @@ import com.lzy.okgo.OkGo;
 
 import java.util.logging.Level;
 
-/**
- * Author:lwz
- * Time:2019/7/16
- * Description:
- */
-
 public class JlhxApplication extends MultiDexApplication {
     private static JlhxApplication mApplication;
 
