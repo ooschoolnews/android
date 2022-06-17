@@ -38,11 +38,6 @@ public class CLassListFragment extends BaseFragment implements BGARefreshLayout.
 
     private int mTabId;
     private SchoolNewsAdapter mOrderListAdapter;
-    //    private List<GrabSingleListBean> grabSingleListBeans = new ArrayList<>();
-    //请求页数
-    private int mPageNum;
-//    private OrderBean mOrderBean;
-
 
     public static CLassListFragment newInstance(int tabId) {
         CLassListFragment fragment = new CLassListFragment();

@@ -44,7 +44,6 @@ public class WelcomeActivity extends BaseActivity {
         runnable = new Runnable() {
             @Override
             public void run() {
-//               GuideActivity.startGuidActivity(mActivity);
                 if (Preferences.isLogin()) {
                     MainActivity.start(mActivity);
                 } else {

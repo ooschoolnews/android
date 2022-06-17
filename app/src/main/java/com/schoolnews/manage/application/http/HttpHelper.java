@@ -72,21 +72,7 @@ public class HttpHelper {
                 .execute(callback);
     }
 
-    /**
-     * 修改密码
-     *
-     * @param tag
-     * @param callback
-     */
-    public static void modifyPsd(Object tag, String phone, String psd, JsonCallback callback) {
-        OkGo.post(AddressContants.API_SERVER_MODIFY_PSD)
-                .tag(tag)
-                .isMultipart(true)
-                .headers("Content-Type", "multipart/form-data; boundary=;")
-                .params("phone", phone)
-                .params("psd", psd)
-                .execute(callback);
-    }
+
 
     /**
      * 发布帖子

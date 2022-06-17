@@ -5,18 +5,6 @@ import java.io.Serializable;
 
 public class Page implements Serializable{
 
-    /**
-     * plainPageNum : 1
-     * pageNum : 1
-     * numPerPage : 50
-     * orderField :
-     * orderDirection :
-     * totalPage : 1
-     * prePage : 1
-     * nextPage : 1
-     * totalCount : 6
-     */
-
     private int plainPageNum;
     private int pageNum;        //当前页
     private int numPerPage;

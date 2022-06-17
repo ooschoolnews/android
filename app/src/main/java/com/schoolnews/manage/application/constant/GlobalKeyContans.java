@@ -25,13 +25,6 @@ public class GlobalKeyContans {
     public @interface TabIndex {
     }
 
-    //用户信息修改类型
-    public static final String TYPE_PERSONAL_DATA_PHONE = "phone";
-    public static final String TYPE_PERSONAL_DATA_MOBILEPHONE = "mobilePhone";
-    public static final String TYPE_PERSONAL_DATA_EMAIL = "email";
-    public static final String TYPE_PERSONAL_DATA_QQ = "qq";
-    public static final String TYPE_PERSONAL_DATA_WECHAT = "wechat";
-
 
 
     public static final int CODE_SUCCESS = 0;      //接口请求成功"),

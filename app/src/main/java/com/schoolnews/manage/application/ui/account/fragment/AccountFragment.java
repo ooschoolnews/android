@@ -15,10 +15,9 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
 
- * Description:  校园动态
- */
+//Description:  校园动态
+
 
 public class AccountFragment extends BaseFragment {
 

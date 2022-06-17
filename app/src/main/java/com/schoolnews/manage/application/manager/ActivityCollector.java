@@ -76,18 +76,6 @@ public class ActivityCollector {
         activities.clear();
     }
 
-    /**
-     * 获取栈顶activity
-     * @return
-     */
-    public static Activity getTopActivity() {
-        Iterator iterator = activities.entrySet().iterator();
-        Entry tail = null;
-        while (iterator.hasNext()) {
-            tail = (Entry) iterator.next();
-        }
-        return (Activity) tail.getValue();
-    }
 }
 
 

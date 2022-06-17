@@ -101,38 +101,6 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
         });
     }
 
-    /**
-     * 根据点击item 设置pop显示位置  显示在item正中间
-     *
-     * @param anchorView
-     */
-    private void showPopupWindow(final View anchorView) {
-        View contentView = LayoutInflater.from(mActivity).inflate(R.layout.pop_cancel_collect, null);
-        View.OnClickListener menuItemOnClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                noLike();
-            }
-        };
-        contentView.findViewById(R.id.cancel_collect_btn).setOnClickListener(menuItemOnClickListener);
-        mPopupWindow = new PopupWindow(contentView,
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-        mPopupWindow.setBackgroundDrawable(new ColorDrawable());
-
-
-        int[] location = new int[2];
-        anchorView.getLocationInWindow(location);
-        mPopupWindow.showAsDropDown(anchorView, ScreenUtils.getScreenWidth(mActivity) / 2 - (int) ScreenUtils.dip2px(mActivity, 60),
-                -anchorView.getHeight() + ((anchorView.getHeight() - DipUtils.dp2px(mActivity, 40)) / 2));
-
-        mPopupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
-            @Override
-            public void onDismiss() {
-                anchorView.setBackgroundResource(R.drawable.message_list_item_bg);
-            }
-        });
-    }
-
     @Override
     protected void processLogic(Bundle savedInstanceState) {
         getMessageListData();

@@ -77,12 +77,6 @@ public class PopupInputWindow {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String editable = mInputTextView.getText().toString();
-                /*
-                String str = stringFilter(editable); //过滤特殊字符
-                if (!editable.equals(str)) {
-                    mInputTextView.setText(str);
-                }
-                LogUtil.i("text","输入了:"+mInputTextView.getText().toString().length());*/
 
                 if (StringUtils.isEmpty(editable)) {
                     mSendBtn.setEnabled(false);
@@ -128,15 +122,7 @@ public class PopupInputWindow {
             }
         });
     }
-    public static String stringFilter(String str)throws PatternSyntaxException{
-        String regEx = "[/\\:*?<>|\"\n\t]";
-        Pattern p = Pattern.compile(regEx);
-        Matcher m = p.matcher(str);
-        return m.replaceAll("");
-    }
-    public void setDataEmpty(){
-        mInputTextView.setText("");
-    }
+
     public void dismiss() {
         mPopWindow.dismiss();
     }
@@ -161,7 +147,6 @@ public class PopupInputWindow {
                 }
             }
         }, 0);
-
     }
 
     public void backgroundAlpha(float bgAlpha) {

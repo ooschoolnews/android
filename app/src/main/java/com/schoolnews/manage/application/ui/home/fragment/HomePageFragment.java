@@ -22,11 +22,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
-/**
-
- * Description:
- */
-
 public class HomePageFragment extends BaseFragment {
 
     @BindView(R.id.tabs)

@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
 import com.schoolnews.manage.application.constant.GlobalKeyContans;
@@ -19,7 +18,6 @@ import com.schoolnews.manage.application.ui.account.fragment.AccountFragment;
 import com.schoolnews.manage.application.ui.account.fragment.ConsultFragment;
 import com.schoolnews.manage.application.ui.home.fragment.HomePageFragment;
 import com.schoolnews.manage.application.ui.person.fragment.PersonInfoFragment;
-import com.schoolnews.manage.application.utils.Preferences;
 import com.schoolnews.manage.application.views.TabDynamicLayoutView;
 
 import java.util.ArrayList;
@@ -174,7 +172,6 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mHomePageFragment);
                 }
-//                mImmersionBar.statusBarDarkFont(true).init();//深色文字
                 break;
             case GlobalKeyContans.MAIN_SINGLE_INDEX:
                 if (null == mAccountFragment) {
@@ -183,8 +180,6 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mAccountFragment);
                 }
-//                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
-
                 break;
               case GlobalKeyContans.MAIN_CONSULT:
                 if (null == mConsultFragment) {
@@ -193,8 +188,6 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mConsultFragment);
                 }
-//                mImmersionBar.statusBarDarkFont(true).init(); //深色文字
-
                 break;
             case GlobalKeyContans.MAIN_MY_INDEX:
                 if (null == mPersonInfoFragment) {
@@ -203,8 +196,6 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
                 } else {
                     transaction.show(mPersonInfoFragment);
                 }
-//                mImmersionBar.statusBarDarkFont(true).init();//深色文字
-
                 break;
 
         }

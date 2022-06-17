@@ -17,7 +17,6 @@ import com.schoolnews.manage.application.R;
 
 /**
  * @Description: 分享弹窗
-
  */
 public class DialogForShare extends DialogFragment {
     private OnDialogShareListener onDialogShareListener;

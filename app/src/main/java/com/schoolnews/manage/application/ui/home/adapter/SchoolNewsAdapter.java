@@ -11,16 +11,9 @@ import com.schoolnews.manage.application.utils.image.GlideLoader;
 
 import java.util.List;
 
+//新闻展示
 
 public class SchoolNewsAdapter extends BaseQuickAdapter<CommonListBean, BaseViewHolder> {
-
-    public SchoolNewsAdapter(int layoutResId, List data) {
-        super(layoutResId, data);
-    }
-
-    public SchoolNewsAdapter(List data) {
-        super(data);
-    }
 
     public SchoolNewsAdapter(int layoutResId) {
         super(layoutResId);

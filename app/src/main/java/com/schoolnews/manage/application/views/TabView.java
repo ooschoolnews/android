@@ -51,68 +51,7 @@ public class TabView extends LinearLayout {
         return this;
     }
 
-    /**
-     * 设置默认值
-     * @param iconResId
-     * @param text
-     * @return
-     */
-    public TabView setDefaultData(@DrawableRes int iconResId, CharSequence text){
-        setIcon(iconResId);
-        setText(text);
-        return this;
-    }
 
-    /**
-     * 设置默认值
-     * @param drawable
-     * @param textResId
-     * @return
-     */
-    public TabView setDefaultData(Drawable drawable, @StringRes int textResId){
-        setIcon(drawable);
-        setText(textResId);
-        return this;
-    }
-
-    /**
-     * 设置默认值
-     * @param drawable
-     * @param text
-     * @return
-     */
-    public TabView setDefaultData(Drawable drawable , CharSequence text){
-        setIcon(drawable);
-        setText(text);
-        return this;
-    }
-    /**
-     * 设置默认值
-     * @param iconResId
-     * @param textResId
-     * @param markStr
-     * @return
-     */
-    public TabView setDefaultData(@DrawableRes int iconResId, @StringRes int textResId, String markStr){
-        setIcon(iconResId);
-        setText(textResId);
-//        setMarkNum(markStr);
-        return this;
-    }
-
-    /**
-     * 设置默认值
-     * @param iconResId
-     * @param text
-     * @param markStr
-     * @return
-     */
-    public TabView setDefaultData(@DrawableRes int iconResId, CharSequence text, String markStr){
-        setIcon(iconResId);
-        setText(text);
-//        setMarkNum(markStr);
-        return this;
-    }
     /**
      * 设置图片
      * @param resId
@@ -123,15 +62,6 @@ public class TabView extends LinearLayout {
         return this;
     }
 
-    /**
-     * 设置图片
-     * @param drawable
-     * @return
-     */
-    public TabView setIcon(Drawable drawable){
-        iconIv.setImageDrawable(drawable);
-        return this;
-    }
 
     /**
      * 设置下方文字
@@ -160,10 +90,6 @@ public class TabView extends LinearLayout {
         textTv.setSelected(isChecked);
         iconIv.setSelected(isChecked);
     }
-    public TabView setIconVisiable(int visibility){
-//        dotIv.setVisibility(visibility);
-        return this;
-    }
 
     public void setIndex(@GlobalKeyContans.TabIndex int index) {
         this.index = index;
@@ -172,38 +98,5 @@ public class TabView extends LinearLayout {
     public @GlobalKeyContans.TabIndex int getIndex() {
         return index;
     }
-//    /**
-//     * 设置右上角数字角标
-//     * @param str
-//     * @return
-//     */
-//    public TabView setMarkNum(String str){
-//        int num = 0;
-//        try {
-//            num = Integer.parseInt(str);
-//        } catch (NumberFormatException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return setMarkNum(num);
-//    }
-//    /**
-//     * 设置右上角数字角标
-//     * @param num
-//     * @return
-//     */
-//    public TabView setMarkNum(int num){
-//        if(num>0){
-//            if (num > 99) {
-//                markNum.setText("99+");
-//            }else{
-//                markNum.setText(num+"");
-//            }
-//            markNum.setVisibility(View.VISIBLE);
-//        }else {
-//            markNum.setText(null);
-//            markNum.setVisibility(View.GONE);
-//        }
-//        return this;
-//    }
+
 }
