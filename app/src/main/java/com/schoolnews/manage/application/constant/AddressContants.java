@@ -28,7 +28,7 @@ public final class AddressContants {
     public static final String API_SERVER_CANCEL_COLLECT = SERVER_ADDR_HOME + "/news/deleteCollection";
     public static final String API_SERVER_LIKE = SERVER_ADDR_HOME + "/admin/file/upload";
     public static final String API_SERVER_NO_LIKE = SERVER_ADDR_HOME + "/admin/file/upload";
-
+    public static final String API_SERVER_FEEDBACK = SERVER_ADDR_HOME + "/admin/user/feedback";
 
     public static final String API_SERVER_ZHAUNZHANG_LIST = SERVER_ADDR_HOME + "/news/list";
     public static final String API_SERVER_SEARCH = SERVER_ADDR_HOME + "/news/key";

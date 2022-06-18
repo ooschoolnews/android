@@ -10,59 +10,15 @@ public class LogUtil {
 		LogImpl.init(logFile, level);
 	}
 
-	public static final void v(String tag, String msg) {
-		if(is_show)
-		LogImpl.v(tag, buildMessage(msg));
-	}
-
-	public static final void v(String tag, String msg, Throwable thr) {
-		if(is_show)
-		LogImpl.v(tag, buildMessage(msg), thr);
-	}
-
 	public static final void d(String tag, String msg) {
 		if(is_show)
 		LogImpl.d(tag, buildMessage(msg));
 	}
 
-	public static final void d(String tag, String msg, Throwable thr) {
-		if(is_show)
-		LogImpl.d(tag, buildMessage(msg), thr);
-	}
 
 	public static final void i(String tag, String msg) {
 		if(is_show)
 		LogImpl.i(tag, buildMessage(msg));
-	}
-
-	public static final void i(String tag, String msg, Throwable thr) {
-		if(is_show)
-		LogImpl.i(tag, buildMessage(msg), thr);
-	}
-
-	public static final void w(String tag, String msg) {
-		if(is_show)
-		LogImpl.w(tag, buildMessage(msg));
-	}
-
-	public static final void w(String tag, String msg, Throwable thr) {
-		if(is_show)
-		LogImpl.w(tag, buildMessage(msg), thr);
-	}
-
-	public static final void w(String tag, Throwable thr) {
-		if(is_show)
-		LogImpl.w(tag, buildMessage(""), thr);
-	}
-
-	public static final void e(String tag, String msg) {
-		if(is_show)
-		LogImpl.e(tag, buildMessage(msg));
-	}
-
-	public static final void e(String tag, String msg, Throwable thr) {
-		if(is_show)
-		LogImpl.e(tag, buildMessage(msg), thr);
 	}
 	
 	public static final void ui(String msg) {

@@ -269,17 +269,17 @@ public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogSh
     }
     @Override
     public void weixin() {
-        ShareManager.getInstance().shareWeiXinAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
-        ToastUtils.showLongToast("请配置正确的UMENG_APPKEY");
+        ShareManager.getInstance().shareWeiXinAction(mActivity, "www.baidu.com", "校园新闻", "", "xx");
+        ToastUtils.showLongToast("请安装微信");
     }
     @Override
     public void weibo() {
-        ShareManager.getInstance().shareSinaAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
-        ToastUtils.showLongToast("请配置正确的UMENG_APPKEY");
+        ShareManager.getInstance().shareSinaAction(mActivity, "www.baidu.com", "校园新闻", "", "xx");
+        ToastUtils.showLongToast("请安装微博");
     }
     @Override
     public void qq() {
-        ShareManager.getInstance().shareQQAction(mActivity, "www.baidu.com", "校园新闻", "", "校园新鲜事早知道");
-        ToastUtils.showLongToast("请配置正确的UMENG_APPKEY");
+        ShareManager.getInstance().shareQQAction(mActivity, "www.baidu.com", "校园新闻", "", "xx");
+        ToastUtils.showLongToast("请安装QQ");
     }
 }

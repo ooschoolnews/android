@@ -9,9 +9,13 @@ import android.widget.TextView;
 
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
+import com.schoolnews.manage.application.bean.FeedbackBean;
+import com.schoolnews.manage.application.bean.InfoBean;
 import com.schoolnews.manage.application.constant.AddressContants;
+import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
+import com.schoolnews.manage.application.ui.MainActivity;
 import com.schoolnews.manage.application.utils.Preferences;
 import com.schoolnews.manage.application.utils.ToastUtils;
 import com.lzy.okgo.OkGo;
@@ -30,6 +34,8 @@ public class PutMessageActivity extends BaseActivity {
     EditText contentEt;
     @BindView(R.id.add_tv)
     TextView addTv;
+
+    protected FeedbackBean mFeedbackBean;
 
     public static void start(Context context) {
         Intent intent = new Intent(context, PutMessageActivity.class);
@@ -79,7 +85,25 @@ public class PutMessageActivity extends BaseActivity {
 
     @OnClick(R.id.add_tv)
     public void onClick() {
-        ToastUtils.showShortToast("意见反馈提交成功");
+        ToastUtils.showShortToast("提交成功");
         finish();
+//        OkGo.post(AddressContants.API_SERVER_FEEDBACK)
+//                .isMultipart(true)
+//                .headers("Content-Type", "multipart/form-data; boundary=;")
+//                .params("user_id", Preferences.getUserId())
+//                .params("feedback", contentEt.getText().toString())
+//                .execute(new JsonCallback<LzyResponse<InfoBean>>() {
+//                    @Override
+//                    public void onSuccess(LzyResponse<InfoBean> agentBeanLzyResponse, Call call, Response response) {
+//                        ToastUtils.showShortToast("提交成功");
+//                        finish();
+//                    }
+//                    @Override
+//                    public void onError(Call call, Response response, Exception e) {
+//                        super.onError(call, response, e);
+//                        ToastUtils.showLongToast("提交失败");
+//                        finish();
+//                    }
+//                });
     }
 }

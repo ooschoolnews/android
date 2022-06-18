@@ -35,10 +35,7 @@ import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Response;
 
-/**
- * @Description:
 
- */
 public class SearchActivity extends BaseActivity {
 
     @BindView(R.id.search_et)

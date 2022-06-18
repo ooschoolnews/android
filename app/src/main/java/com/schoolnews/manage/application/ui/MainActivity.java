@@ -223,5 +223,4 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
         }
         return super.onKeyDown(keyCode, event);
     }
-
 }

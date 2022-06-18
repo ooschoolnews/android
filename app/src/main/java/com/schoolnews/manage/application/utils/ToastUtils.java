@@ -40,7 +40,6 @@ public final class ToastUtils {
      */
     private static void showToast(CharSequence text, int duration) {
         if (sToast == null) {
-            //解决小米系统  toast会显示应用名字的问题
             sToast = Toast.makeText(Utils.getContext(), null, duration);
             sToast.setText(text);
         } else {

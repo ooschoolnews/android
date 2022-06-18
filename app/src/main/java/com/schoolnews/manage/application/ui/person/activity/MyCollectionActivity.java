@@ -2,30 +2,23 @@ package com.schoolnews.manage.application.ui.person.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.PopupWindow;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
 import com.schoolnews.manage.application.bean.CommonListBean;
-import com.schoolnews.manage.application.bean.FeeListBean;
 import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
 import com.schoolnews.manage.application.ui.home.activity.SchoolNewsDetailActivity;
 import com.schoolnews.manage.application.ui.home.adapter.ToIssueBillsListAdapter;
-import com.schoolnews.manage.application.utils.DipUtils;
-import com.schoolnews.manage.application.utils.ScreenUtils;
 import com.schoolnews.manage.application.utils.ToastUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
