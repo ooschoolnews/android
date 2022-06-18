@@ -33,7 +33,7 @@
         <ImageView
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@mipmap/icon_header" />
+            android:src="@mipmap/header" />
 
     </LinearLayout>
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/name_tv"
             android:layout_marginTop="@dimen/dp_16"
-            android:text="学号：6541231"
+            android:text="学号：20376666"
             android:visibility="gone" />
 
         <TextView

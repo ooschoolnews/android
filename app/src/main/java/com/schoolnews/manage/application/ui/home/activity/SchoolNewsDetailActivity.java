@@ -45,7 +45,6 @@ import okhttp3.Response;
 
 /**
  * @Description: 校园资讯详情
-
  */
 public class SchoolNewsDetailActivity extends BaseActivity implements OnDialogShareListener {
 

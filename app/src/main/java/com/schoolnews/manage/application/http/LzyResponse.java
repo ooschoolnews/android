@@ -15,7 +15,6 @@ public class LzyResponse<T> implements Serializable {
 
     public int code;    //0表示成功，1失败
     public String msg;       //日志消息
-    public String token;
     public Page page;       //分页的参数
     public T data;          //数据对象结构
     public T entity;          //数据对象结构

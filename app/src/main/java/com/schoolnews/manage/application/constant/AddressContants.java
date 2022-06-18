@@ -17,10 +17,6 @@ public final class AddressContants {
     }
 
     public static final String API_SERVER_LOGIN = SERVER_ADDR_HOME + "/user/login";
-    public static final String API_SERVER_MODIFY = SERVER_ADDR_HOME + "/user/register";
-    public static final String API_SERVER_PUT_MSG = SERVER_ADDR_HOME + "/user/register";
-    public static final String API_SERVER_MODIFY_MSG = SERVER_ADDR_HOME + "/user/register";
-    public static final String API_SERVER_REGIST = SERVER_ADDR_HOME + "/user/register";
     public static final String API_SERVER_FEE_LIST = SERVER_ADDR_HOME + "/news/collectionList"; //获取收藏列表
     public static final String API_SERVER_COMMON_LIST = SERVER_ADDR_HOME + "/news/commentList";
     public static final String API_SERVER_ADD_COMMON_LIST = SERVER_ADDR_HOME + "/news/addComment";

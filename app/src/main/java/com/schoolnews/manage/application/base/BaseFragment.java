@@ -74,8 +74,6 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 处理对用户是否可见
-     *
-     * @param isVisibleToUser
      */
     private void handleOnVisibilityChangedToUser(boolean isVisibleToUser) {
         if (isVisibleToUser) {

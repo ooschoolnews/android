@@ -16,7 +16,6 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
-
  * Description: 党政教育
  */
 
