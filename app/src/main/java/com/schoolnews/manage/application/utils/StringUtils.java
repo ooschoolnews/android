@@ -1,11 +1,7 @@
 package com.schoolnews.manage.application.utils;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
 
 /**
  * 字符串相关工具类

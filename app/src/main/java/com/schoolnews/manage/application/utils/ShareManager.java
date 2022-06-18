@@ -152,16 +152,12 @@ public class ShareManager {
 
         @Override
         public void onResult(SHARE_MEDIA platform) {
-            LogUtil.d("plat", "platform" + platform);
             DialogMaker.dismissProgressDialog();
         }
 
         @Override
         public void onError(SHARE_MEDIA platform, Throwable t) {
-            if (t != null) {
-                LogUtil.d("throw", "throw:" + t.getMessage());
-            }
-            DialogMaker.dismissProgressDialog();
+
         }
 
         @Override

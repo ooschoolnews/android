@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.schoolnews.manage.application.JlhxApplication;
 import com.schoolnews.manage.application.http.HttpHelper;
-import com.schoolnews.manage.application.utils.LogUtil;
 import com.schoolnews.manage.application.utils.dialog.DialogMaker;
 
 import org.greenrobot.eventbus.EventBus;
@@ -157,7 +156,6 @@ public abstract class BaseFragment extends Fragment {
     }
 
     public void showLoadingDialog() {
-        LogUtil.i(TAG, "showLoadingDialog");
         DialogMaker.showProgressDialog(mActivity, null);
     }
 

@@ -8,7 +8,6 @@ import android.content.Context;
 Utils初始化相关
 */
 
-
 public final class Utils {
 
     @SuppressLint("StaticFieldLeak")
