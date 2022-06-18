@@ -123,26 +123,6 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
         });
     }
 
-    /**
-     * 取消点赞
-     */
-    private void noLike() {
-        HttpHelper.noLike(TAG, 11, new JsonCallback() {
-            @Override
-            public void onSuccess(Object o, Call call, Response response) {
-                ToastUtils.showShortToast("删除成功");
-                dismissLoadingDialog();
-            }
-
-            @Override
-            public void onError(Call call, Response response, Exception e) {
-                super.onError(call, response, e);
-                dismissLoadingDialog();
-                ToastUtils.showLongToast("删除失败");
-            }
-        });
-    }
-
     @Override
     public void onBGARefreshLayoutBeginRefreshing(BGARefreshLayout refreshLayout) {
         getMessageListData();

@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
 import com.schoolnews.manage.application.JlhxApplication;
-import com.schoolnews.manage.application.bean.FeedbackBean;
 import com.schoolnews.manage.application.bean.UserBean;
 import com.schoolnews.manage.application.constant.GlobalKeyContans;
 
@@ -111,13 +110,6 @@ public class Preferences {
         editor.putString(KEY_USER_ROLE, bean.getRolecode());
         roleCode = bean.getRolecode();
         editor.putLong(KEY_USER_ORGID, bean.getOrgId());
-        editor.commit();
-    }
-
-    public static void FeedbackBean(@NonNull FeedbackBean bean) {
-        SharedPreferences.Editor editor = getSharedPreferences().edit();
-        editor.putLong(KEY_USER_ID, bean.getUser_id());
-        editor.putString(KEY_USER_FeedBack, bean.getFeedback());
         editor.commit();
     }
 

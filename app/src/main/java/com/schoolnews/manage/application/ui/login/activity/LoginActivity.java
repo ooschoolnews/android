@@ -28,6 +28,7 @@ import okhttp3.Response;
 
 public class LoginActivity extends BaseActivity {
 
+
     @BindView(R.id.account_tv)
     TextView accountTv;
     @BindView(R.id.input_phone_et)
@@ -46,6 +47,7 @@ public class LoginActivity extends BaseActivity {
     LinearLayout registLl;
 
     protected InfoBean mInfoBean;// 登陆信息
+
 
     public static void start(Context context) {
         Intent intent = new Intent(context, LoginActivity.class);

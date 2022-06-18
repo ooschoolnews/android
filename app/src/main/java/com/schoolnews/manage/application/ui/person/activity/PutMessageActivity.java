@@ -9,21 +9,11 @@ import android.widget.TextView;
 
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.base.BaseActivity;
-import com.schoolnews.manage.application.bean.FeedbackBean;
-import com.schoolnews.manage.application.bean.InfoBean;
-import com.schoolnews.manage.application.constant.AddressContants;
-import com.schoolnews.manage.application.http.HttpHelper;
-import com.schoolnews.manage.application.http.JsonCallback;
-import com.schoolnews.manage.application.http.LzyResponse;
-import com.schoolnews.manage.application.ui.MainActivity;
-import com.schoolnews.manage.application.utils.Preferences;
 import com.schoolnews.manage.application.utils.ToastUtils;
-import com.lzy.okgo.OkGo;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import okhttp3.Call;
-import okhttp3.Response;
+
 
 //意见反馈
 
@@ -35,7 +25,6 @@ public class PutMessageActivity extends BaseActivity {
     @BindView(R.id.add_tv)
     TextView addTv;
 
-    protected FeedbackBean mFeedbackBean;
 
     public static void start(Context context) {
         Intent intent = new Intent(context, PutMessageActivity.class);

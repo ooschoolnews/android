@@ -40,12 +40,6 @@ public class ShareManager {
 
     /**
      * 分享 QQ
-     *
-     * @param activity
-     * @param url      链接
-     * @param title    标题
-     * @param img      图片链接
-     * @param des      描述
      */
     public void shareQQAction(Activity activity, String url, String title, String img, String des) {
         UMWeb web = getUMWeb(activity, url, title, img, des);
@@ -59,13 +53,7 @@ public class ShareManager {
     }
 
     /**
-     * 分享新浪
-     *
-     * @param activity
-     * @param url      链接
-     * @param title    标题
-     * @param img      图片链接
-     * @param des      描述
+     * 分享微博
      */
     public void shareSinaAction(Activity activity, String url, String title, String img, String des) {
         UMWeb web = getUMWeb(activity, url, title, img, des);
@@ -80,12 +68,6 @@ public class ShareManager {
 
     /**
      * 分享微信
-     *
-     * @param activity
-     * @param url      链接
-     * @param title    标题
-     * @param img      图片链接
-     * @param des      描述
      */
     public void shareWeiXinAction(Activity activity, String url, String title, String img, String des) {
         UMWeb web = getUMWeb(activity, url, title, img, des);

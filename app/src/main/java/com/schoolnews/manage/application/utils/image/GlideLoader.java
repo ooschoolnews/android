@@ -6,8 +6,6 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.schoolnews.manage.application.utils.DipUtils;
 import com.schoolnews.manage.application.utils.StringUtils;
 
 
