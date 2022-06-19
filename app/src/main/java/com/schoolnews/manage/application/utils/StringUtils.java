@@ -15,18 +15,11 @@ public final class StringUtils {
     }
 
 
-    /**
-     * @param time 时间毫秒值
-     */
     public static String timeFormat(long time) {
         return timeFormat("yyyy-MM-dd", time);
     }
 
-    /**
-     * @param formatStr
-     * @param time      时间毫秒值
-     * @return
-     */
+
     public static String timeFormat(String formatStr, long time) {
         if (time <= 0) {
             return "";
