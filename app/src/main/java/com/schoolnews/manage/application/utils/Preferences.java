@@ -32,7 +32,7 @@ public class Preferences {
     private static String userPhone; //用户名
     private static String userToken; //用户token
     private static String roleCode; //用户role
-    public static boolean ISBACKGROUND = true;  //是否后台标识
+
 
 
     public static void saveUserPhone(String phone) {

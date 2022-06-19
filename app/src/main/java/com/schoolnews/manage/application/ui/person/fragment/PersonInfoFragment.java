@@ -67,16 +67,15 @@ public class PersonInfoFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.info_rel, R.id.logout_rel, R.id.fankui_rel})
+    @OnClick({R.id.info_rel, R.id.logout_rel})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.info_rel:
-                //我的收藏
                 MyCollectionActivity.start(mActivity);
                 break;
-        case R.id.fankui_rel:
-                PutMessageActivity.start(mActivity);
-                break;
+//        case R.id.fankui_rel:
+//                PutMessageActivity.start(mActivity);
+//                break;
             case R.id.logout_rel:
                 Preferences.cleanUserInfo();
                 LoginActivity.start(mActivity);
