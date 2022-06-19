@@ -16,7 +16,7 @@ import com.schoolnews.manage.application.http.HttpHelper;
 import com.schoolnews.manage.application.http.JsonCallback;
 import com.schoolnews.manage.application.http.LzyResponse;
 import com.schoolnews.manage.application.ui.home.activity.SchoolNewsDetailActivity;
-import com.schoolnews.manage.application.ui.home.adapter.ToIssueBillsListAdapter;
+import com.schoolnews.manage.application.ui.home.adapter.SchoolNewsAdapter;
 import com.schoolnews.manage.application.utils.ToastUtils;
 
 import java.util.List;
@@ -38,7 +38,7 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
 
     private PopupWindow mPopupWindow;
 
-    private ToIssueBillsListAdapter mBlackListAdapter;
+    private SchoolNewsAdapter mBlackListAdapter;
 
     public static void start(Context context) {
         Intent intent = new Intent(context, MyCollectionActivity.class);
@@ -78,7 +78,7 @@ public class MyCollectionActivity extends BaseActivity implements BGARefreshLayo
         refreshLayout.setRefreshViewHolder(new BGANormalRefreshViewHolder(getApplicationContext(), true));
         refreshLayout.setPullDownRefreshEnable(true);
 
-        mBlackListAdapter = new ToIssueBillsListAdapter(R.layout.news_list_item, 1);
+        mBlackListAdapter = new SchoolNewsAdapter(R.layout.news_list_item);
         LinearLayoutManager manager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         blackListRv.setLayoutManager(manager);
         blackListRv.setAdapter(mBlackListAdapter);

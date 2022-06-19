@@ -4,6 +4,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.schoolnews.manage.application.R;
 import com.schoolnews.manage.application.bean.CommonListBean;
+import com.schoolnews.manage.application.utils.Preferences;
 import com.schoolnews.manage.application.utils.StringUtils;
 
 import java.util.List;
@@ -26,7 +27,8 @@ public class PingLunListAdapter extends BaseQuickAdapter<CommonListBean, BaseVie
 
     @Override
     protected void convert(final BaseViewHolder helper, CommonListBean item) {
-        helper.setText(R.id.name_tv, item.getContent());
-        helper.setText(R.id.content_tv, StringUtils.timeFormat(item.getCreateAt()));
+        helper.setText(R.id.name_tv, Preferences.getUsername());
+        helper.setText(R.id.content_tv, item.getContent());
+//        helper.setText(R.id.content_tv, StringUtils.timeFormat(item.getCreateAt()));
     }
 }
