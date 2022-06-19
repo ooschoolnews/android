@@ -125,8 +125,6 @@ public class MainActivity extends BaseActivity implements TabDynamicLayoutView.O
 
     /**
      * 隐藏fragment
-     *
-     * @param transaction
      */
     private void hideFragments(FragmentTransaction transaction) {
         if (null != mHomePageFragment) {

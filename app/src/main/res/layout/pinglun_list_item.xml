@@ -8,7 +8,7 @@
         android:id="@+id/header_iv"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@mipmap/icon_header" />
+        android:src="@mipmap/header" />
 
     <TextView
         android:id="@+id/name_tv"

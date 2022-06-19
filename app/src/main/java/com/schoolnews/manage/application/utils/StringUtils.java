@@ -19,7 +19,7 @@ public final class StringUtils {
      * @param time 时间毫秒值
      */
     public static String timeFormat(long time) {
-        return timeFormat("yyyy-MM-dd HH:mm:ss", time);
+        return timeFormat("yyyy-MM-dd", time);
     }
 
     /**
